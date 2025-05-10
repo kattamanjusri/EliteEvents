@@ -1,0 +1,289 @@
+.business-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0ebeb;
+  min-height: 75vh;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(46, 43, 43, 0.318);
+  width: 90%;
+  min-height: 50vh;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background-color: #967aa4;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+.profile-info {
+padding-top: 20px;
+padding-left: 10%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.profile-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.profile-column p {
+  margin: 6px 0;
+  color: #444;
+  font-size: 15px;
+}
+
+
+.manager-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3f51b5;
+}
+
+.manager-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.manager-name {
+  margin: 0 0 4px 0; /* Bottom margin reduced to 4px */
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  font-style: italic;
+}
+
+.manager-role {
+  margin: 0 0 2px 0; /* Slight gap under role */
+  font-size: 16px;
+  color: #282626;
+  
+}
+
+.manager-location {
+  margin: 0; /* No extra margin needed below */
+  font-size: 15px;
+  color: #233872;
+  font-style: italic;
+}
+
+
+
+/* Events Section */
+.event-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 90%;
+  max-width: 800px;
+ 
+}
+
+.event-card h3 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 22px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 8px;
+}
+
+.event-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.event-card li {
+  background: #f2f4f7;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Loading Text */
+.loading {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+  color: #888;
+}
+.navbar2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  background-color: #5b1676;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Custom button styles for manager profile */
+.manager-edit-button {
+  background: linear-gradient(135deg, #5b1676, #7e42a0);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(91, 22, 118, 0.3);
+}
+
+.manager-edit-button:hover {
+  background: linear-gradient(135deg, #7e42a0, #5b1676);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(91, 22, 118, 0.4);
+}
+
+.manager-edit-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(91, 22, 118, 0.4);
+}
+
+.button-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.edit-profile-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.profile-button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.manager-action-button {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.save-button {
+  background: linear-gradient(135deg, #2e7d32, #4caf50);
+  color: white;
+  box-shadow: 0 4px 8px rgba(46, 125, 50, 0.3);
+}
+
+.save-button:hover {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(46, 125, 50, 0.4);
+}
+
+.cancel-button {
+  background: linear-gradient(135deg, #d32f2f, #f44336);
+  color: white;
+  box-shadow: 0 4px 8px rgba(211, 47, 47, 0.3);
+}
+
+.cancel-button:hover {
+  background: linear-gradient(135deg, #f44336, #d32f2f);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(211, 47, 47, 0.4);
+}
+
+.manager-action-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Report Styles */
+.report-container {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.status-summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.status-item {
+  background: #f5f5f5;
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-label {
+  font-weight: 600;
+}
+
+.status-count {
+  background: #4a6bdf;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .chart-container {
+    max-width: 100%;
+  }
+  
+  .status-summary {
+    flex-direction: column;
+    align-items: center;
+  }
+}

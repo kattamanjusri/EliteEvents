@@ -1,0 +1,269 @@
+.navbar1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  background-color: #5b1676;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 80px;
+  width: 180px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  position: relative;
+  font-size: 20px;
+}
+
+.nav-links a,
+.nav-links span {
+  text-decoration: none;
+  color: white;
+  padding: 10px 25px;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links span:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+}
+
+.dropdown-menu1 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background:#5b1676;
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 150px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu1 li {
+  display: block;
+}
+
+.dropdown-menu1 li {
+  color: #333;
+  padding: 10px 15px;
+}
+
+.dropdown-menu1 li:hover {
+  background: #5b1676;
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu1 {
+  display: block;
+}
+
+.not-found-container {
+  text-align: center;
+}
+
+.not-found-image {
+  width: 300px;
+  height: auto;
+  margin-top: 20px; 
+}
+
+.main-home-container {
+  width: 100%;
+  min-height: 86vh;
+  background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url('../assets/hero.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-home-text {
+  max-width: 800px;
+}
+
+.main-home-text h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.main-home-text p {
+  max-width: 700px;
+  margin: 10px auto 20px;
+  line-height: 1.4;
+}
+
+.main-btn1 {
+  background: #fff;
+  color: #212121;
+  padding: 14px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; 
+}
+
+.main-btn1:hover {
+  background: #cb9d9d;
+}
+
+.main-btn1 img {
+  width: 20px;
+  height: auto;
+  position: relative;
+  top: 1px; 
+}
+
+.contact {
+  margin: 80px auto;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+}
+
+.contact-col {
+  flex-basis: 48%;
+  color: #676767;
+}
+
+.contact-col h3 {
+  color: #000F38;
+  font-weight: 500;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-col h3 img {
+  width: 35px;
+  margin-left: 10px;
+
+}
+
+.contact-col p {
+  max-width: 450px;
+  list-style: 0.3;
+}
+
+.contact-col ul li {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.contact ul li img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.contact form input, .contact form textarea {
+  display: flex;
+  width: 100%;
+  background: #EBECFE;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  resize: none;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  font-size: 16px; /* Set the font size for input and textarea */
+}
+
+.contact form input[type="email"] {
+  width: 100%; /* Ensure the email input field takes the full width */
+}
+
+.contact-col span {
+  display: block;
+  margin: 20px 0;
+}
+.free{
+  font-size: 20px;
+}
+
+/* For screens smaller than 1000px */
+@media (max-width: 1000px) {
+  .contact {
+      flex-direction: column; /* Stack columns vertically */
+      padding: 30px; /* Adjust padding */
+  }
+  .contact-col {
+      flex-basis: 100%; /* Full width for each column */
+      margin-bottom: 20px; /* Add spacing between columns */
+  }
+  .contact form input, .contact form textarea {
+      font-size: 14px; /* Adjust font size */
+      padding: 12px; /* Adjust padding */
+  }
+  .contact-col h3 {
+      font-size: 30px; /* Adjust heading size */
+  }
+  .free {
+      font-size: 18px; /* Adjust font size */
+  }
+}
+
+/* For screens smaller than 768px (tablet size) */
+@media (max-width: 768px) {
+  .contact {
+      padding: 20px; /* Further reduce padding */
+  }
+  .contact form input, .contact form textarea {
+      font-size: 12px; /* Further reduce font size */
+      padding: 10px; /* Adjust padding */
+  }
+  .contact-col h3 {
+      font-size: 25px; /* Further reduce heading size */
+  }
+  .free {
+      font-size: 16px; /* Adjust font size */
+  }
+}
+
+/* For screens smaller than 480px (mobile size) */
+@media (max-width: 480px) {
+  .contact {
+      padding: 10px; /* Minimal padding */
+  }
+  .contact-col {
+      text-align: center; /* Center align text */
+  }
+  .contact form input, .contact form textarea {
+      font-size: 10px; /* Smallest font size */
+      padding: 8px; /* Minimal padding */
+  }
+  .contact-col h3 {
+      font-size: 20px; /* Smallest heading size */
+  }
+  .free {
+      font-size: 14px; /* Smallest font size */
+  }
+}

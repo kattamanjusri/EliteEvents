@@ -1,0 +1,165 @@
+.testimonials {
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+}
+
+ .back-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(235, 231, 125);
+}
+.next-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(235, 231, 125);
+
+}
+
+.next-btn {
+    right: 0;
+}
+
+.back-btn {
+    left: 0;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    width: 200%;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.slider ul li {
+    list-style: none;
+    width: 50%;
+    padding: 20px;
+}
+
+.slide {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 50px; /* Increased padding */
+    border-radius: 10px;
+    background-color: rgb(243, 213, 247);
+    color: black;
+    line-height: 1.4;
+    height: 400px; /* Increased height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Ensure content stays within the box */
+}
+
+.slide img {
+    width: 150px; /* Increased width */
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 4px solid black;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px; /* Increased font size */
+}
+
+.user-info h3 {
+    color: black; /* Changed text color for better contrast */
+    font-size: 20px; /* Increased font size */
+}
+
+.slide p {
+    margin: 0;
+    padding: 0;
+    color: black; /* Ensure text color is black */
+    overflow-wrap: break-word; /* Ensure long words break to the next line */
+    font-size: 18px; /* Increased font size */
+}
+/* For screens smaller than 1000px */
+@media (max-width: 1000px) {
+    .testimonials {
+        padding: 0 40px; /* Reduce horizontal padding */
+    }
+    .slide {
+        height: 350px; /* Reduce height */
+        padding: 30px; /* Adjust padding */
+    }
+    .slide img {
+        width: 120px; /* Reduce image size */
+    }
+    .user-info {
+        font-size: 16px; /* Adjust font size */
+    }
+    .user-info h3 {
+        font-size: 18px; /* Adjust heading size */
+    }
+    .slide p {
+        font-size: 16px; /* Adjust paragraph font size */
+    }
+}
+
+/* For screens smaller than 768px (tablet size) */
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 0 20px; /* Further reduce horizontal padding */
+    }
+    .slide {
+        height: 300px; /* Further reduce height */
+        padding: 20px; /* Adjust padding */
+    }
+    .slide img {
+        width: 100px; /* Further reduce image size */
+    }
+    .user-info {
+        font-size: 14px; /* Smaller font size */
+    }
+    .user-info h3 {
+        font-size: 16px; /* Smaller heading size */
+    }
+    .slide p {
+        font-size: 14px; /* Smaller paragraph font size */
+    }
+}
+
+/* For screens smaller than 480px (mobile size) */
+@media (max-width: 480px) {
+    .testimonials {
+        padding: 0 10px; /* Minimal horizontal padding */
+    }
+    .slide {
+        height: auto; /* Allow height to adjust dynamically */
+        padding: 15px; /* Minimal padding */
+    }
+    .slide img {
+        width: 80px; /* Smaller image size */
+    }
+    .user-info {
+        font-size: 12px; /* Smallest font size */
+    }
+    .user-info h3 {
+        font-size: 14px; /* Smallest heading size */
+    }
+    .slide p {
+        font-size: 12px; /* Smallest paragraph font size */
+    }
+    .back-btn, .next-btn {
+        width: 40px; /* Reduce button size */
+        padding: 3px; /* Adjust padding */
+    }
+}

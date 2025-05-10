@@ -1,0 +1,55 @@
+.footer{
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #797979;
+    padding: 10px 0;
+    background-color: white;
+    padding: 0px;
+
+
+}
+
+.footer ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+
+    
+}
+/* For screens smaller than 1000px */
+@media (max-width: 1000px) {
+    .footer {
+        flex-direction: column; /* Stack footer items vertically */
+        align-items: center; /* Center align items */
+        padding: 30px; /* Adjust padding */
+    }
+    .footer ul li {
+        margin-left: 15px; /* Reduce margin between list items */
+    }
+}
+
+/* For screens smaller than 768px (tablet size) */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px; /* Further reduce padding */
+    }
+    .footer ul li {
+        margin-left: 10px; /* Further reduce margin */
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+/* For screens smaller than 480px (mobile size) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px; /* Minimal padding */
+        text-align: center; /* Center align text */
+    }
+    .footer ul li {
+        display: block; /* Stack list items vertically */
+        margin: 5px 0; /* Add vertical margin */
+        font-size: 12px; /* Smallest font size */
+    }
+}

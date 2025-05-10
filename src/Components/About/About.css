@@ -1,0 +1,114 @@
+.about {
+    margin: 50px auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%; 
+    border-radius: 30px; 
+    background-color: white;
+    padding: 20px; 
+}
+
+.about-left {
+    flex-basis: 40%;
+    position: relative;
+}
+
+.about-right {
+    flex-basis: 56%;
+}
+
+.about-img {
+    width: 90%;
+    border-radius: 30px; 
+}
+
+.play-icon {
+    width: 40px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about h3 {
+    font-weight: 600;
+    font-size: 30px; 
+    color: #020202; 
+}
+
+.about h2 {
+    font-size: 15px; 
+    color: #222222; 
+    margin: 10px 0;
+    max-width: 400px;
+}
+
+.about p {
+    color: #181246;
+    margin-bottom: 15px;
+    font-size: 16px; 
+}
+/* For screens smaller than 1000px */
+@media (max-width: 1000px) {
+    .about {
+        flex-direction: column; /* Stack content vertically */
+        width: 90%; /* Adjust width */
+        padding: 15px; /* Reduce padding */
+    }
+    .about-left, .about-right {
+        flex-basis: 100%; /* Full width for both sections */
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+    .about h3 {
+        font-size: 20px; /* Reduce heading size */
+    }
+    .about h2 {
+        font-size: 15px; /* Adjust subheading size */
+    }
+    .about p {
+        font-size: 14px; /* Adjust paragraph font size */
+    }
+    .play-icon {
+        width: 20px; /* Reduce play icon size */
+    }
+}
+
+/* For screens smaller than 768px (tablet size) */
+@media (max-width: 768px) {
+    .about {
+        padding: 10px; /* Further reduce padding */
+    }
+    .about h3 {
+        font-size: 25px; /* Further reduce heading size */
+    }
+    .about h2 {
+        font-size: 18px; /* Further reduce subheading size */
+    }
+    .about p {
+        font-size: 12px; /* Further reduce paragraph font size */
+    }
+    .play-icon {
+        width: 25px; /* Further reduce play icon size */
+    }
+}
+
+/* For screens smaller than 480px (mobile size) */
+@media (max-width: 480px) {
+    .about {
+        padding: 5px; /* Minimal padding */
+        text-align: center; /* Center align text */
+    }
+    .about h3 {
+        font-size: 20px; /* Smallest heading size */
+    }
+    .about h2 {
+        font-size: 14px; /* Smallest subheading size */
+    }
+    .about p {
+        font-size: 10px; /* Smallest paragraph font size */
+    }
+    .play-icon {
+        width: 20px; /* Smallest play icon size */
+    }
+}

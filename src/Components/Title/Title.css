@@ -1,0 +1,55 @@
+.title {
+    text-align: center;
+    color: rgb(22, 7, 47); /* Changed text color for better contrast */
+    font-size: 25px; /* Reduced font-size */
+    font-weight: 700; /* Corrected font-weight */
+    text-transform: uppercase;
+    margin: 0; /* Adjusted margin to touch the about border */
+    border-radius: 50px; /* Adjusted border-radius */
+    background-color: rgb(251, 254, 230);
+    padding: 10px; /* Reduced padding */
+
+}
+
+.title h2 {
+    font-size: 20px; /* Reduced font-size */
+    color: rgb(34, 34, 34); /* Changed text color for better contrast */
+    margin-top: 8px; /* Reduced margin-top for better spacing */
+    text-transform: none;
+}
+
+/* For screens smaller than 1000px */
+@media (max-width: 1000px) {
+    .title {
+        font-size: 20px; /* Adjust font size */
+        padding: 10px; /* Reduce padding */
+    }
+    .title h2 {
+        font-size: 15px; /* Adjust heading font size */
+        margin-top: 8px; /* Adjust margin for better spacing */
+    }
+}
+
+/* For screens smaller than 768px (tablet size) */
+@media (max-width: 768px) {
+    .title {
+        font-size: 20px; /* Further reduce font size */
+        padding: 10px; /* Reduce padding */
+    }
+    .title h2 {
+        font-size: 15px; /* Further reduce heading font size */
+        margin-top: 5px; /* Adjust margin */
+    }
+}
+
+/* For screens smaller than 480px (mobile size) */
+@media (max-width: 480px) {
+    .title {
+        font-size: 20px; /* Smallest font size */
+        padding: 8px; /* Minimal padding */
+    }
+    .title h2 {
+        font-size: 18px; /* Smallest heading font size */
+        margin-top: 3px; /* Minimal margin */
+    }
+}

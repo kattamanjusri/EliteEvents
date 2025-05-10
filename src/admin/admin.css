@@ -1,0 +1,558 @@
+/* EventList specific styles */
+.custom-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+background-color: #ccc;;
+  font-size: 19px;
+  
+}
+
+.custom-button:hover {
+  background-color: #a05cbb;
+}
+
+
+
+
+/* .event {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.event h2 {
+  color: #5b1676;
+  text-align: center;
+  margin-bottom: 20px;
+} */
+
+
+.event ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.event li {
+  background-color: #fff;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event li h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.event li p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* .event-list-del-btn {
+  background-color:black;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+} */
+
+/* 
+.status-badge {
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  padding-right: 30px;
+}
+
+.status-badge.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.completed {
+  background-color: #d4edda;
+  color: #155724;
+} */
+
+.status-select {
+  font-size: 12px;
+  padding: 4px 8px;
+  height: 30px;
+  width: auto;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+.status-select:focus {
+  border-color: #5b1676;
+  outline: none;
+}
+
+/* Loading text style */
+.event p.loading {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #888;
+}
+
+/* Navbar Styles */
+.navbar3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  background-color: #5b1676;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-title-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust this value to control the space between logo and title */
+}
+
+/* You might also want to adjust the logo width */
+.logo {
+  height: 80px;
+  width: 100px;
+  margin-right: 0; /* Remove any default margin */
+}
+
+.title-admin {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.nav-links a,
+.nav-links span {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links span:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 150px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li {
+  display: block;
+}
+
+.dropdown-menu a {
+  color: #333;
+  padding: 10px 15px;
+}
+
+.dropdown-menu a:hover {
+  background: #008CBA;
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.not-found-container {
+  text-align: center;
+}
+
+/* Table Styles */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+thead {
+  background: #783095;
+  color: white;
+}
+
+thead th {
+  padding: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s ease-in-out;
+}
+
+td {
+  padding: 12px;
+  color: #333;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Responsive Table */
+@media screen and (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  td, th {
+    padding: 10px;
+  }
+}
+
+button {
+  background-color: rgb(38, 26, 26);
+  color: white;
+  border: black;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.login-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.admin-home-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-title {
+  color: #5b1676;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+/* .status-badge {
+  padding: 8px 47%;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  padding-right: 30px;
+} */
+
+/* Apply color styles for status */
+.status-badge.pending {
+  background-color: #fff3cd;
+  color: black;
+}
+
+.status-badge.completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.edit-btn {
+  background-color: #007bff;
+}
+
+/* Keep your existing button styles but add these specific ones */
+ .status-badge.pending {
+  margin-top: 15px;
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.confirmed {
+  background-color: #9ea3d0;
+  color: #3c2e7d;
+}
+
+.status-badge.completed {
+  background-color: #d4edda;
+  color: #155724;
+} 
+
+.event {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.event h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.events-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+}
+
+.event-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card h3 {
+  color: #2c3e50;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.event-details p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.event-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  width:30%;
+  padding: 10px 15px;
+  margin: 0 auto;
+}
+
+.event-list-del-btn {
+  background-color: #a262b8;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  width: auto;
+  max-width: 130px;
+  margin-top: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* .status-badge.pending {
+  background-color: #f39c12;
+  color: white;
+}
+
+.status-badge.completed {
+  background-color: #2ecc71;
+  color: white;
+} */
+
+.status-badge.in.progress {
+  background-color: #3498db;
+  color: white;
+}
+
+.status-badge.cancelled {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.cost-section {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.cost-input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 100px;
+  font-size: 16px;
+}
+
+.send-cost-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send-cost-btn:hover {
+  background-color: #2980b9;
+}
+
+.send-cost-btn:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.cost-sent-badge {
+  background-color: #27ae60;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 18px;
+  color: #555;
+}
+.delete-event-btn {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.delete-event-btn:hover {
+  background-color: #b71c1c;
+}
+
+.delete-event-btn:disabled {
+  background-color: #e57373;
+  cursor: not-allowed;
+}
+
+/* Container for the filter section */
+.filter-container {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left:30%;
+}
+
+/* Label for the filter dropdown */
+.filter-container label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Dropdown styling */
+.filter-container select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width:200px;
+}
+
+/* Dropdown hover and focus effects */
+.filter-container select:hover,
+.filter-container select:focus {
+  border-color: #007bff;
+}

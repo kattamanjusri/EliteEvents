@@ -1,0 +1,131 @@
+.contact {
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    color: #676767;
+}
+
+.contact-col h3 {
+    color: #000F38;
+    font-weight: 500;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-col h3 img {
+    width: 35px;
+    margin-left: 10px;
+  
+}
+
+.contact-col p {
+    max-width: 450px;
+    list-style: 0.3;
+}
+
+.contact-col ul li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact ul li img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.contact form input, .contact form textarea {
+    display: flex;
+    width: 100%;
+    background: #EBECFE;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    resize: none;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    font-size: 16px; /* Set the font size for input and textarea */
+}
+
+.contact form input[type="email"] {
+    width: 100%; /* Ensure the email input field takes the full width */
+}
+
+.contact-col span {
+    display: block;
+    margin: 20px 0;
+}
+.free{
+    font-size: 20px;
+}
+
+/* For screens smaller than 1000px */
+@media (max-width: 1000px) {
+    .contact {
+        flex-direction: column; /* Stack columns vertically */
+        padding: 30px; /* Adjust padding */
+    }
+    .contact-col {
+        flex-basis: 100%; /* Full width for each column */
+        margin-bottom: 20px; /* Add spacing between columns */
+    }
+    .contact form input, .contact form textarea {
+        font-size: 14px; /* Adjust font size */
+        padding: 12px; /* Adjust padding */
+    }
+    .contact-col h3 {
+        font-size: 30px; /* Adjust heading size */
+    }
+    .free {
+        font-size: 18px; /* Adjust font size */
+    }
+}
+
+/* For screens smaller than 768px (tablet size) */
+@media (max-width: 768px) {
+    .contact {
+        padding: 20px; /* Further reduce padding */
+    }
+    .contact form input, .contact form textarea {
+        font-size: 12px; /* Further reduce font size */
+        padding: 10px; /* Adjust padding */
+    }
+    .contact-col h3 {
+        font-size: 25px; /* Further reduce heading size */
+    }
+    .free {
+        font-size: 16px; /* Adjust font size */
+    }
+}
+
+/* For screens smaller than 480px (mobile size) */
+@media (max-width: 480px) {
+    .contact {
+        padding: 10px; /* Minimal padding */
+    }
+    .contact-col {
+        text-align: center; /* Center align text */
+    }
+    .contact form input, .contact form textarea {
+        font-size: 10px; /* Smallest font size */
+        padding: 8px; /* Minimal padding */
+    }
+    .contact-col h3 {
+        font-size: 20px; /* Smallest heading size */
+    }
+    .free {
+        font-size: 14px; /* Smallest font size */
+    }
+}

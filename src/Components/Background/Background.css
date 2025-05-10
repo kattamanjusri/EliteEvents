@@ -1,0 +1,80 @@
+.background {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: absolute; /* ✅ changed from relative */
+  top: 0;
+  left: 0;
+  filter: blur(0px);
+}
+
+.background1 {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: absolute; /* ✅ changed from relative */
+  top: 0;
+  left: 0;
+  filter: blur(3px);
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Hero content */
+.hero {
+  position: relative; /* ✅ this is important */
+  overflow: hidden;
+}
+
+/* Overlay elements positioned relative to .hero */
+.hero-text,
+.hero-explore,
+.hero-dot-play {
+  position: absolute;
+  width: 100%;
+  z-index: 1; /* ✅ makes them appear above the background */
+}
+
+/* Responsive tweaks */
+@media (max-width: 1000px) {
+  .background {
+    height: 80vh;
+    filter: blur(2px);
+  }
+
+  .hero-text,
+  .hero-explore,
+  .hero-dot-play {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .background {
+    height: 70vh;
+    filter: blur(3px);
+  }
+
+  .hero-text,
+  .hero-explore,
+  .hero-dot-play {
+    width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  .background {
+    height: 60vh;
+    filter: blur(4px);
+  }
+
+  .hero-text,
+  .hero-explore,
+  .hero-dot-play {
+    width: 80%;
+  }
+}
